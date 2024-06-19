@@ -1,0 +1,54 @@
+header {
+    background-color: $rosaf;
+
+
+
+    .logomenu {
+        height: 50px;
+    }
+
+
+    ul {
+        li {
+            display: flex;
+            display: inline-block;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: "gloriola";
+            margin: 0px 5px;
+
+            :hover {
+                background-color: $blanco;
+                border-radius: 10px;
+                color: $rosaf;
+            }
+
+            :active {
+                background-color: $blanco;
+                border-radius: 10px;
+                color: $rosaf;
+            }
+        }
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: $rosaf;
+    }
+
+    .nav-link {
+        color: $blanco;
+        padding-left: 10px;
+    }
+
+    .navbar-nav {
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0.5rem;
+        --bs-nav-link-hover-color: rgb(213, 0, 124);
+    }
+
+    .fondoOffcanvas {
+        background-color: $rosaf;
+    }
+
+}

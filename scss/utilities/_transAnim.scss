@@ -1,0 +1,40 @@
+.potesSkala {
+    height: 200px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+}
+
+.potesSkalap {
+    height: 200px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+}
+
+
+.potesSkala2 {
+    height: 200px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+
+    &:hover {
+        transform: scale(1.2, 1.2) translate(0, -10px);
+    }
+}
+
+.potesSilueta {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+    position: relative;
+
+    &:hover {
+        transform: translate(0px, -30px);
+    }
+}

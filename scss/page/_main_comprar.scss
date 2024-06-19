@@ -1,0 +1,61 @@
+.ofertasSkala {
+    padding: 10px;
+    @include flexf (flex, space-around, center, inherit);
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    .tarjeta {
+        width: 200px;
+        border: 1px solid $gris;
+        border-radius: 15px;
+        background-color: $rosaf;
+        color: $blanco;
+        text-align: center;
+
+        &:hover {
+            .potesSkala {
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+
+    .tarjetaSkala {
+        width: 100%;
+    }
+
+    .potesSkalac {
+        background-color: $blanco;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .potesSkala {
+        height: 200px;
+    }
+
+    .liquidación {
+        background-color: $azulOferta;
+        position: relative;
+
+    }
+
+    .oferta {
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: $rojo;
+        color: $amarillo;
+        padding: 5px;
+        font-weight: $negrita;
+    }
+
+    .position-absolute {
+        position: absolute;
+        top: 50px;
+        right: -20px;
+    }
+
+    .position-absolute {
+        position: absolute;
+
+    }
+}

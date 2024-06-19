@@ -1,0 +1,892 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "gloriola";
+  src: url("../assets/gloriola/Gloriola-Regular.otf");
+  font-family: "impact";
+  src: url("../assets/impact/impact.ttf");
+}
+.sombra {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.position-sticky {
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+}
+
+p {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  margin: 30px;
+}
+
+.comprar {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  align-content: center;
+  align-self: center;
+}
+
+.potesSkala {
+  height: 200px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+
+.potesSkalap {
+  height: 200px;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+
+.potesSkala2 {
+  height: 200px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+.potesSkala2:hover {
+  transform: scale(1.2, 1.2) translate(0, -10px);
+}
+
+.potesSilueta {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+  position: relative;
+}
+.potesSilueta:hover {
+  transform: translate(0px, -30px);
+}
+
+header {
+  background-color: rgb(213, 0, 124);
+}
+header .logomenu {
+  height: 50px;
+}
+header ul li {
+  display: flex;
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  margin: 0px 5px;
+}
+header ul li :hover {
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(213, 0, 124);
+}
+header ul li :active {
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(213, 0, 124);
+}
+header .navbar-nav .nav-link.active,
+header .navbar-nav .nav-link.show {
+  color: rgb(213, 0, 124);
+}
+header .nav-link {
+  color: white;
+  padding-left: 10px;
+}
+header .navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-hover-color: rgb(213, 0, 124);
+}
+header .fondoOffcanvas {
+  background-color: rgb(213, 0, 124);
+}
+
+.encabezado .encabezadoDestacado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: rgb(213, 0, 124);
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.encabezado .encabezadoDestacado .encabezadoIndex {
+  width: 500px;
+}
+.encabezado .encabezadoDestacado .logoIndex {
+  height: 200px;
+}
+
+.potesContenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: inherit;
+  align-content: inherit;
+  background-color: rgb(9, 30, 219);
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.potesContenedor .h1 {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "impact";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+.potesContenedor:hover .h1 {
+  transform: translate(30px, 0px);
+  opacity: 1;
+}
+.potesContenedor .potes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  position: relative;
+}
+.potesContenedor .potes .relativo {
+  position: relative;
+}
+.potesContenedor .potes .relativo .potesSilueta {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  align-content: inherit;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.potesContenedor .potes .relativo .h3 {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  font-size: 15px;
+  position: absolute;
+  text-align: left;
+  bottom: 5px;
+  left: 20%;
+  right: 50%;
+  opacity: 0;
+}
+.potesContenedor .potes .relativo:hover .h3 {
+  opacity: 1;
+}
+
+.pelosContenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #aac811;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+.pelosContenedor .h2 {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "impact";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+.pelosContenedor:hover .h2 {
+  transform: translate(30px, 0px);
+  opacity: 1;
+}
+.pelosContenedor .pelos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  width: 50vw;
+  flex-wrap: wrap;
+  position: relative;
+}
+.pelosContenedor .pelos .potesSilueta {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  align-content: inherit;
+  width: 100px;
+  height: 100px;
+}
+.pelosContenedor .pelos .relativo {
+  position: relative;
+}
+.pelosContenedor .pelos .relativo .potesSilueta {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  align-content: inherit;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.pelosContenedor .pelos .relativo .h4 {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  font-size: 15px;
+  position: absolute;
+  text-align: left;
+  bottom: 5px;
+  left: 30%;
+  opacity: 0;
+}
+.pelosContenedor .pelos .relativo:hover .h4 {
+  opacity: 1;
+}
+
+.productos {
+  display: grid;
+  padding: 15px;
+  width: 80vw;
+  margin: 0 auto;
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas: "skala1 skala2 skala3 skala4" "skala5 skala6 skala7 skala8" "skala9 skala10 skala11 skala12";
+}
+.productos .skala {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: inherit;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 30px;
+}
+.productos .skala:hover .potesSkalap {
+  transform: scale(1.3, 1.3) rotate(-20deg);
+}
+.productos .potesSkalap {
+  height: 200px;
+}
+
+.productosDetalle {
+  display: grid;
+  padding: 15px;
+  width: 80vw;
+  margin: 0 auto;
+  grid-template-columns: 200px 10fr;
+  grid-template-rows: 10, 1fr;
+  grid-template-areas: "skala1 txt4" "skala2 txt5" "skala3 txt6" "skala4 txt7" "skala5 txt8" "skala6 txt9" "skala7 txt10" "skala8 txt11" "skala9 txt12" "skala10 txt13";
+}
+.productosDetalle .skala1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: inherit;
+  background-color: rgb(9, 30, 219);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.productosDetalle .potesSkala2 {
+  height: 200px;
+}
+.productosDetalle .txt1 {
+  background-color: rgb(9, 30, 219);
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  margin-bottom: 5px;
+  text-align: left;
+}
+.productosDetalle .txt1 p {
+  background-color: rgb(9, 30, 219);
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.encabezadoMetodo {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  align-content: space-around;
+  background-color: rgb(213, 0, 124);
+  color: white;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.rulosContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  background-color: rgb(9, 30, 219);
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+.rulosContenedor .h1 {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "impact";
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  opacity: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  transition: opacity;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 5ms;
+}
+.rulosContenedor:hover .h1 {
+  transform: translate(10px, 0px) rotate(180deg);
+  opacity: 1;
+}
+.rulosContenedor .rulos {
+  display: grid;
+  padding: 15px;
+  width: 80vw;
+  margin: 0 auto;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas: "rulos1 rulos2 rulos3" "txtm1 txtm2 txtm3";
+  align-items: start;
+  justify-content: space-between;
+  align-content: center;
+  justify-items: center;
+}
+.rulosContenedor .tipoOndas {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+.multimedia {
+  display: grid;
+  padding: 15px;
+  width: 80vw;
+  margin: 0 auto;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas: "video1 video2" "video3 video4";
+}
+.multimedia .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: inherit;
+  margin: 5px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: inherit;
+  margin: 20px 0px;
+}
+
+.ofertasSkala {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: inherit;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.ofertasSkala .tarjeta {
+  width: 200px;
+  border: 1px solid rgb(108, 100, 100);
+  border-radius: 15px;
+  background-color: rgb(213, 0, 124);
+  color: white;
+  text-align: center;
+}
+.ofertasSkala .tarjeta:hover .potesSkala {
+  transform: scale(1.2, 1.2);
+}
+.ofertasSkala .tarjetaSkala {
+  width: 100%;
+}
+.ofertasSkala .potesSkalac {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+.ofertasSkala .potesSkala {
+  height: 200px;
+}
+.ofertasSkala .liquidación {
+  background-color: rgb(79, 37, 175);
+  position: relative;
+}
+.ofertasSkala .oferta {
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: red;
+  color: yellow;
+  padding: 5px;
+  font-weight: bolder;
+}
+.ofertasSkala .position-absolute {
+  position: absolute;
+  top: 50px;
+  right: -20px;
+}
+.ofertasSkala .position-absolute {
+  position: absolute;
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(to bottom, rgb(255, 109, 134), rgb(213, 0, 124));
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer ul {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "gloriola";
+}
+footer .foot {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: start;
+  justify-content: space-between;
+  align-content: center;
+  justify-items: center;
+}
+footer .rrSs {
+  margin-top: 15px;
+}
+footer .rrSs .rs {
+  height: 50px;
+}
+footer form input {
+  margin: 5px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+/* media queries */
+/* TABLET */
+@media screen and (max-width: 1024px) {
+  .encabezadoMetodo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(213, 0, 124);
+    color: white;
+    margin-bottom: 10px;
+  }
+  .multimedia {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 4, 1fr;
+    grid-template-areas: "video1" "video2" "video3" "video4";
+    justify-content: center;
+  }
+  .encabezadoDestacado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    background-color: rgb(213, 0, 124);
+    color: white;
+  }
+  .logoIndex {
+    height: 200px;
+    order: 1;
+  }
+  .encabezadoIndex {
+    width: 500px;
+    order: 2;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .productos {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 10, 1fr;
+    grid-template-areas: "skala1 skala2" "skala3 skala4" "skala5 skala6" "skala7 skala8" "skala9 skala10" "skala11 skala12";
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: start;
+  }
+  .productosDetalle {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 20, 1fr;
+    grid-template-areas: "skala1" "txt1" "skala2" "txt2" "skala3" "txt3" "skala4" "txt4" "skala5" "txt5" "skala6" "txt6" "skala7" "txt7" "skala8" "txt8" "skala9" "txt9" "skala10" "txt10";
+    justify-content: center;
+    align-content: center;
+  }
+  .productosDetalle .skala1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: inherit;
+    background-color: rgb(9, 30, 219);
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .potesSkala2 {
+    height: 200px;
+    padding-bottom: 0%;
+  }
+  .txt1 {
+    background-color: rgb(9, 30, 219);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .rulosContenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgb(9, 30, 219);
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .rulosContenedor .rulos {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "rulos1" "txtm1" "rulos2" "txtm2" "rulos3" "txtm3";
+    align-items: start;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+  }
+  .rulosContenedor .rulos1 {
+    grid-area: rulos1;
+  }
+  .rulosContenedor .rulos2 {
+    grid-area: rulos2;
+  }
+  .rulosContenedor .rulos3 {
+    grid-area: rulos3;
+  }
+  .rulosContenedor .txtm1 {
+    grid-area: txtm1;
+  }
+  .rulosContenedor .txtm2 {
+    grid-area: txtm2;
+  }
+  .rulosContenedor .txtm3 {
+    grid-area: txtm3;
+  }
+  .multimedia {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 4, 1fr;
+    justify-items: center;
+    grid-template-areas: "video1" "video2" "video3" "video4";
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: inherit;
+    flex-direction: inherit;
+    flex-wrap: inherit;
+    width: 320px;
+    margin: 5px;
+  }
+  .encabezadoMetodo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(213, 0, 124);
+    color: white;
+    margin-bottom: 10px;
+  }
+  .encabezado .encabezadoDestacado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    background-color: rgb(213, 0, 124);
+    color: white;
+  }
+  .encabezado .encabezadoDestacado .logoIndex {
+    width: 350px;
+    order: 1;
+  }
+  .encabezado .encabezadoDestacado .encabezadoIndex {
+    width: 350px;
+    order: 2;
+  }
+  footer {
+    display: flex;
+    background-color: rgb(213, 0, 124);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  footer ul {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+  }
+  footer ul a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+  }
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .rs {
+    height: 50px;
+  }
+  .potesContenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(9, 30, 219);
+    width: 100%;
+    margin-top: 10px;
+  }
+  .potesContenedor .h1 {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "impact";
+    font-weight: bolder;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    opacity: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    transition: opacity;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+  }
+  .potesContenedor:hover .h1 {
+    transform: translate(10px, 0px) rotate(180deg);
+    opacity: 1;
+  }
+  .potesContenedor .potes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50vw;
+  }
+  .potesContenedor .potes .relativo {
+    position: relative;
+  }
+  .potesContenedor .potes .relativo .potesSilueta {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+    position: relative;
+  }
+  .potesContenedor .potes .relativo .potesSilueta:hover {
+    transform: translate(-50px, 0px);
+  }
+  .potesContenedor .potes .relativo .h3 {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    font-size: 15px;
+    position: absolute;
+    text-align: left;
+    bottom: 5px;
+    left: 50%;
+    opacity: 0;
+  }
+  .potesContenedor .potes .relativo:hover .h3 {
+    opacity: 1;
+  }
+  .pelosContenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #aac811;
+    width: 100%;
+    position: relative;
+  }
+  .pelosContenedor .h2 {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    font-weight: bolder;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    opacity: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    transition: opacity;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+  }
+  .pelosContenedor:hover .h2 {
+    transform: translate(10px, 0px) rotate(180deg);
+    opacity: 1;
+  }
+  .pelosContenedor .pelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+  .pelosContenedor .pelos .relativo {
+    position: relative;
+  }
+  .pelosContenedor .pelos .relativo .potesSilueta {
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5ms;
+    position: relative;
+  }
+  .pelosContenedor .pelos .relativo .potesSilueta:hover {
+    transform: translate(-50px, 0px);
+  }
+  .pelosContenedor .pelos .relativo .h4 {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "gloriola";
+    font-size: 15px;
+    position: absolute;
+    text-align: left;
+    bottom: 5px;
+    left: 50%;
+    opacity: 0;
+  }
+  .pelosContenedor .pelos .relativo:hover .h4 {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

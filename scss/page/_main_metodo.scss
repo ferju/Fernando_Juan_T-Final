@@ -1,0 +1,85 @@
+.encabezadoMetodo {
+    @include flexf (flex, inherit, center, space-around);
+    background-color: $rosaf;
+    color: $blanco;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.rulosContenedor {
+    @include flexf (flex, space-between, center, space-between);
+    background-color: $azul;
+    color: $blanco;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+
+    .h2 {
+        color: $blanco;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: $impact;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        opacity: 0;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        transition: opacity;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 5ms;
+    }
+
+    &:hover {
+        .h2 {
+            transform: translate(10px, 0px) rotate(180deg);
+            ;
+            opacity: 1;
+        }
+    }
+
+    .rulos {
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+            "rulos1 rulos2 rulos3"
+            "txtm1 txtm2 txtm3";
+        align-items: start;
+        justify-content: space-between;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .tipoOndas {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+    }
+    .caja {
+        
+        margin: 10px, 10px;
+    }
+}
+
+.multimedia {
+    display: grid;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas:
+        "video1 video2"
+        "video3 video4";
+
+    .video {
+        @include flexf (flex, center, center, inherit);
+        margin: 5px;
+    }
+}

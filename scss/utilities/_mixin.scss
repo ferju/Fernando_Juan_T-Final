@@ -1,0 +1,15 @@
+@mixin flexf ($display, $justifyC, $alignI, $alignC) {
+    display: $display;
+    justify-content: $justifyC;
+    align-items: $alignI;
+    align-content: $alignC;
+}
+
+@mixin flexq ($display, $justifyC, $alignI, $alignC, $flexD, $flexW) {
+    display: flex;
+    justify-content: $justifyC;
+    align-items: $alignI;
+    align-content: $alignC;
+    flex-direction: $flexD;
+    flex-wrap: $flexW;
+}

@@ -1,0 +1,19 @@
+@import "./utilities/variables";
+
+@import "./utilities/reset";
+@import "./utilities/global";
+@import "./utilities/transAnim";
+
+@import "./utilities/mixin";
+
+@import "./components/header";
+@import "./page/main_index";
+@import "./page/main_productos";
+@import "./page/main_metodo";
+@import "./page/main_encontranos";
+@import "./page/main_comprar";
+@import "./components/footer";
+
+
+
+@import "./utilities/mediaQuerie";

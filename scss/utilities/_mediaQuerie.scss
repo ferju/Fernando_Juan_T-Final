@@ -1,0 +1,401 @@
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+/* media queries */
+/* TABLET */
+@media screen and (max-width: 1024px) {
+
+    .encabezadoMetodo {
+        @include flexq (flex, space-around, center, space-around, row, wrap);
+        background-color: $rosaf;
+        color: $blanco;
+        margin-bottom: 10px;
+
+    }
+
+    .multimedia {
+        display: grid;
+        width: 80vw;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        grid-template-areas:
+            "video1"
+            "video2"
+            "video3"
+            "video4";
+        justify-content: center;
+    }
+
+    .encabezadoDestacado {
+        @include flexq (flex, center, center, space-around, column-reverse, wrap);
+        background-color: $rosaf;
+        color: $blanco;
+    }
+
+    .logoIndex {
+        height: 200px;
+        order: 1;
+    }
+
+    .encabezadoIndex {
+        width: 500px;
+        order: 2;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .productos {
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (10, 1fr);
+        grid-template-areas:
+            "skala1 skala2"
+            "skala3 skala4"
+            "skala5 skala6"
+            "skala7 skala8"
+            "skala9 skala10"
+            "skala11 skala12";
+        align-content: space-evenly;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .productosDetalle {
+        display: grid;
+        padding: 15px;
+        width: 80vw;
+        margin: 0 auto;
+        grid-template-columns: 300px;
+        grid-template-rows: (20, 1fr);
+        grid-template-areas:
+            "skala1" "txt1"
+            "skala2" "txt2"
+            "skala3" "txt3"
+            "skala4" "txt4"
+            "skala5" "txt5"
+            "skala6" "txt6"
+            "skala7" "txt7"
+            "skala8" "txt8"
+            "skala9" "txt9"
+            "skala10" "txt10";
+        justify-content: center;
+        align-content: center;
+
+        .skala1 {
+            @include flexf (flex, center, center, inherit);
+            background-color: $azul;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .potesSkala2 {
+        height: 200px;
+        padding-bottom: 0%;
+    }
+
+    .txt1 {
+        background-color: $azul;
+        color: $blanco;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: $gloriola;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .rulosContenedor {
+        @include flexf (flex, space-between, center, space-between);
+        background-color: $azul;
+        color: $blanco;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .rulos {
+            display: grid;
+            padding: 15px;
+            width: 80vw;
+            margin: 0 auto;
+            grid-template-columns: (2, 1fr);
+            grid-template-rows: (3, 1fr);
+            grid-template-areas:
+                "rulos1" "txtm1"
+                "rulos2" "txtm2"
+                "rulos3" "txtm3";
+            align-items: start;
+            justify-content: space-between;
+            align-content: center;
+            justify-items: center;
+        }
+
+        .rulos1 {
+            grid-area: rulos1;
+        }
+
+        .rulos2 {
+            grid-area: rulos2;
+        }
+
+        .rulos3 {
+            grid-area: rulos3;
+        }
+
+        .txtm1 {
+            grid-area: txtm1;
+        }
+
+        .txtm2 {
+            grid-area: txtm2;
+        }
+
+        .txtm3 {
+            grid-area: txtm3;
+        }
+    }
+
+    .multimedia {
+        display: grid;
+        width: 100%;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        justify-items: center;
+        grid-template-areas:
+            "video1"
+            "video2"
+            "video3"
+            "video4";
+    }
+
+    .video {
+        @include flexq (flex, center, center, inherit, inherit, inherit);
+        width: 320px;
+        margin: 5px;
+    }
+
+
+
+
+    .encabezadoMetodo {
+        @include flexq (flex, space-around, center, space-around, row, wrap);
+        background-color: $rosaf;
+        color: $blanco;
+        margin-bottom: 10px;
+    }
+
+    .encabezado {
+        .encabezadoDestacado {
+            @include flexq (flex, center, center, space-around, column-reverse, wrap);
+            background-color: $rosaf;
+            color: $blanco;
+
+            .logoIndex {
+                width: 350px;
+                order: 1;
+            }
+
+            .encabezadoIndex {
+                width: 350px;
+                order: 2;
+            }
+
+        }
+    }
+
+    footer {
+        display: flex;
+        background-color: $rosaf;
+        color: $blanco;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: $gloriola;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+
+        ul {
+            color: $blanco;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: $gloriola;
+
+            a {
+                color: $blanco;
+                text-decoration: none;
+                list-style-type: none;
+                font-family: $gloriola;
+            }
+        }
+
+        .foot {
+            @include flexq (flex, center, flex-start, space-around, column, wrap);
+            padding: 15px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .rs {
+            height: 50px;
+        }
+    }
+
+    .potesContenedor {
+        @include flexq (flex, space-around, center, center, row, wrap);
+        background-color: $azul;
+        width: 100%;
+        margin-top: 10px;
+
+        .h1 {
+            color: $blanco;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: $impact;
+            font-weight: bolder;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            opacity: 0;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            transition: opacity;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 5ms;
+        }
+
+        &:hover {
+            .h1 {
+                transform: translate(10px, 0px) rotate(180deg);;
+                opacity: 1;
+            }
+        }
+
+        .potes {
+            @include flexq (flex, center, center, center, column, wrap);
+            text-align: center;
+            width: 50vw;
+            .relativo {
+                position: relative;
+    
+                .potesSilueta {
+                    transition-property: transform;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in-out;
+                    transition-delay: 5ms;
+                    position: relative;
+        
+                    &:hover {
+                        transform: translate(-50px, 0px);
+                    }
+                }
+    
+                .h3 {
+                    color: $blanco;
+                    text-decoration: none;
+                    list-style-type: none;
+                    font-family: "gloriola";
+                    font-size: 15px;
+                    position: absolute;
+                    text-align: left;
+                    bottom: 5px;
+                    left: 50%;
+                    opacity: 0;
+                }
+    
+                &:hover {
+                    .h3 {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    
+
+    .pelosContenedor {
+        @include flexq (flex, space-around, center, center, row, wrap);
+        background-color: $verde;
+        width: 100%;
+        position: relative;
+        .h2 {
+            color: $blanco;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: "gloriola";
+            font-weight: bolder;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            opacity: 0;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            transition: opacity;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 5ms;
+        }
+
+        &:hover {
+            .h2 {
+                transform: translate(10px, 0px) rotate(180deg);;
+                opacity: 1;
+            }
+        }
+
+        .pelos {
+            @include flexq (flex, center, center, center, column, wrap);
+            width: 50vw;
+            .relativo {
+                position: relative;
+    
+                .potesSilueta {
+                    transition-property: transform;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in-out;
+                    transition-delay: 5ms;
+                    position: relative;
+        
+                    &:hover {
+                        transform: translate(-50px, 0px);
+                    }
+                }
+    
+                .h4 {
+                    color: $blanco;
+                    text-decoration: none;
+                    list-style-type: none;
+                    font-family: "gloriola";
+                    font-size: 15px;
+                    position: absolute;
+                    text-align: left;
+                    bottom: 5px;
+                    left: 50%;
+                    
+                    opacity: 0;
+                }
+    
+                &:hover {
+                    .h4 {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    }

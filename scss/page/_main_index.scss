@@ -1,0 +1,165 @@
+.encabezado {
+    .encabezadoDestacado {
+
+        @include flexf (flex, center, center, space-around);
+        background-color: $rosaf;
+        color: $blanco;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .encabezadoIndex {
+            width: 500px;
+        }
+
+        .logoIndex {
+            height: 200px;
+        }
+    }
+}
+
+.potesContenedor {
+    @include flexf (flex, space-around, inherit, inherit);
+    background-color: $azul;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+
+    .h1 {
+        color: $blanco;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: $impact;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        opacity: 0;
+        transition: opacity;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 5ms;
+    }
+
+    &:hover {
+        .h1 {
+            transform: translate(30px, 0px);
+            opacity: 1;
+        }
+    }
+
+    .potes {
+        @include flexf (flex, space-between, center, space-between);
+        text-align: center;
+        flex-wrap: wrap;
+        width: 50vw;
+        position: relative;
+
+
+
+        .relativo {
+            position: relative;
+
+            .potesSilueta {
+                @include flexf (flex, inherit, center, inherit);
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            .h3 {
+                color: $blanco;
+                text-decoration: none;
+                list-style-type: none;
+                font-family: "gloriola";
+                font-size: 15px;
+                position: absolute;
+                text-align: left;
+                bottom: 5px;
+                left: 20%;
+                right: 50%;
+                opacity: 0;
+            }
+
+            &:hover {
+                .h3 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.pelosContenedor {
+    @include flexf (flex, space-around, center, center);
+    background-color: $verde;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+
+    .h2 {
+        color: $blanco;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: $impact;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        opacity: 0;
+        transition: opacity;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 5ms;
+    }
+
+    &:hover {
+        .h2 {
+            transform: translate(30px, 0px);
+            opacity: 1;
+        }
+    }
+
+    .pelos {
+        @include flexf (flex, space-between, center, space-between);
+        width: 50vw;
+        flex-wrap: wrap;
+        position: relative;
+
+        .potesSilueta {
+            @include flexf (flex, inherit, center, inherit);
+            width: 100px;
+            height: 100px;
+        }
+
+        .relativo {
+            position: relative;
+
+            .potesSilueta {
+                @include flexf (flex, inherit, center, inherit);
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            .h4 {
+                color: $blanco;
+                text-decoration: none;
+                list-style-type: none;
+                font-family: "gloriola";
+                font-size: 15px;
+                position: absolute;
+                text-align: left;
+                bottom: 5px;
+                left: 30%;
+                opacity: 0;
+            }
+
+            &:hover {
+                .h4 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
