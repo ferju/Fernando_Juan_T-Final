@@ -14,7 +14,7 @@
     padding-right: 100px;
     position: relative;
 
-    .h2 {
+    .h1 {
         color: $blanco;
         text-decoration: none;
         list-style-type: none;
@@ -33,7 +33,7 @@
     }
 
     &:hover {
-        .h2 {
+        .h1 {
             transform: translate(10px, 0px) rotate(180deg);
             ;
             opacity: 1;
